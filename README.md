@@ -2,9 +2,6 @@
 
 A full-featured Amazon.in UI clone built with **React + Vite**, featuring product browsing, cart, checkout, wishlist, orders, and more.
 
-## 🔗 Live Demo
-
-> **[https://kamaleshkumar12.github.io/amazon_clone/](https://kamaleshkumar12.github.io/amazon_clone/)**
 
 ---
 

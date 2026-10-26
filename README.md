@@ -1,16 +1,94 @@
-# React + Vite
+# 🛒 Amazon India Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A full-featured Amazon.in UI clone built with **React + Vite**, featuring product browsing, cart, checkout, wishlist, orders, and more.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> **[https://kamaleshkumar12.github.io/amazon_clone/](https://kamaleshkumar12.github.io/amazon_clone/)**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the Oxlint configuration
+- 🏠 Hero banner carousel with auto-slide
+- 🔍 Search with auto-suggestions
+- 🗂️ Category filtering & sidebar filters (price, rating, brand, discount)
+- 🛒 Shopping cart with quantity controls & coupon codes
+- 💳 Multi-step checkout with confetti on order success
+- 📦 Orders history with tracking
+- ❤️ Wishlist toggle
+- 📍 Delivery location picker
+- 📱 Responsive design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+---
+
+## 🚀 Run Locally
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or above)
+- npm (comes with Node.js)
+
+### Steps
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/kamaleshkumar12/amazon_clone.git
+
+# 2. Go into the project folder
+cd amazon_clone
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the dev server
+npm run dev
+```
+
+Then open **[http://localhost:5173](http://localhost:5173)** in your browser.
+
+---
+
+## 🏗️ Build for Production
+
+```bash
+npm run build
+```
+
+Output will be in the `dist/` folder.
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech | Purpose |
+|------|---------|
+| React 19 | UI Framework |
+| Vite 8 | Build tool & dev server |
+| Lucide React | Icons |
+| Canvas Confetti | Order success animation |
+| Vanilla CSS | Styling |
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Header.jsx          # Top nav with search, cart, wishlist
+│   ├── SubNav.jsx          # Category navigation bar
+│   ├── HeroBanner.jsx      # Auto-sliding hero carousel
+│   ├── DealsHighlight.jsx  # Featured deal cards
+│   ├── FiltersSidebar.jsx  # Left sidebar filters
+│   ├── ProductCard.jsx     # Individual product card
+│   ├── ProductDetailModal.jsx  # Product detail popup
+│   ├── CartDrawer.jsx      # Slide-out cart
+│   ├── CheckoutModal.jsx   # Multi-step checkout
+│   ├── OrdersModal.jsx     # Orders history
+│   ├── CategoryDrawer.jsx  # Mobile nav drawer
+│   └── Footer.jsx
+├── data/
+│   └── products.js         # Product catalog data
+├── App.jsx                 # Root component & state
+└── index.css               # Global styles
+```
